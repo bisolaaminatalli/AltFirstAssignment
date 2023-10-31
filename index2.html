@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altschool Application Form</title>
+
+  <style>
+    .first-inputparent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .birth-identity {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Education-Info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Residence-Info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Employement-Info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input {
+      width: 150px;
+      margin-top: 10px;
+      outline: none;
+      min-height: 25px;
+      padding: 5px;
+    }
+
+    label {
+      margin-top: 25px;
+    }
+
+    select {
+      width: 160px;
+      margin-top: 15px;
+      min-height: 35px;
+      margin-right: 9px;
+    }
+
+    textarea {
+      width: 150px;
+      margin-top: 15px;
+      margin-left: 25px;
+      min-height: 35px;
+
+
+
+    }
+
+    .school {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Info-Alt {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      width: 400px;
+      min-height: 8vh;
+      background-color: #6b6ff5;
+      border: #6b6ff5;
+
+
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>Application Form</h3>
+    <p>Fill in your details</p>
+  </header>
+  <form>
+    <fieldset>
+      <legend>Register Here</legend>
+      <div class="first-inputparent">
+
+        <div class="FirstName">
+          <label for="firstname">First Name <sup style="color: red;">*</sup> </label>
+          <br>
+          <input type="text" id="Enter-your-name" name="YourName" placeholder="Enter Your First Name" required>
+        </div>
+
+        <div class="Secondname">
+          <label for="lastname">LastName <sup style="color: red;">*</sup> </label>
+          <br>
+          <input type="text" id="Enter-your-name" name="YourName" placeholder="Enter Your Last Name" required>
+        </div>
+      </div>
+      <div class="birth-identity">
+        <div class="Gender">
+          <label for="Gender">Gender <sup style="color: red;">*</sup> </label>
+          <br>
+
+          <select>
+            <option> Select Your Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </div>
+
+        <div class="Date">
+          <label for="Date">Date Of Birth<sup style="color: red;">*</sup> </label>
+          <br>
+          <input type="date" id="Dob" name="dob" required>
+        </div>
+      </div>
+
+
+      <div class="Education-Info">
+
+        <div class="Email Address">
+
+          <label for="email">Email Address<sup style="color: red;">*</sup> </label>
+          <br>
+          <input type="email" id="Email Address" name="Email Address" placeholder="Enter Your Address" required>
+        </div>
+
+        <div class="Education-Level">
+          <label>Education Level <sup style="color: red;">*</sup></label><br>
+          <select>
+            <option>Select Level Of Education</option>
+            <option value="1">HND</option>
+            <option value="2">Bsc</option>
+            <option value="3">Masters Degree</option>
+          </select>
+        </div>
+      </div>
+      <div class="Residence-Info">
+        <div class="Country">
+          <label>Country</label> <sup style="color: red;">*</sup><br>
+          <select>
+            <option>Select your country</option>
+            <option value="1">Nigeria</option>
+            <option value="2">America</option>
+            <option value="3">London</option>
+            <option value="4">South Africa</option>
+          </select>
+        </div>
+
+        <div>
+          <label>State/City Of Residence <sup style="color: red;">*</sup> </label><br>
+          <select required>
+            <option>Enter Your State of Residence</option>
+            <option value="1">Nigeria</option>
+            <option value="2">America</option>
+            <option value="3">London</option>
+            <option value="4">South Africa</option>
+          </select>
+        </div>
+      </div>
+      <div class="Employement-Info">
+        <div>
+          <label>Employement Status</label><br>
+          <select>
+            <option>Select Employment Status</option>
+            <option value="1">Employed</option>
+            <option value="2">UnEmployed</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Phone number <sup style="color: red;">*</sup></label><br>
+          <input type="number" id="Phone-Number" name="phonenumber" placeholder="Phone-Number" required>
+        </div>
+      </div>
+
+      <div class="school">
+        <div>
+          <label>Choose School</label><br>
+          <select>
+            <option>Select School</option>
+            <option value="1">School Of Engineering</option>
+            <option value="2">School Of Product</option>
+            <option value="2">School Of Data</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Choose Course Of Study <sup style="color: red;">*</sup></label>
+          <br>
+          <select>
+            <option>Select Course</option>
+            <option value="1">Front-End</option>
+            <option value="2">Back-End</option>
+            <option value="2">Cybersecurity</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="Info-Alt">
+        <div>
+          <label>How did You Hear About Us <sup style="color: red;">*</sup> </label><br>
+          <select>
+            <option>Select Channel</option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+            <option value="2">LinkedIn</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Scholarship/Discount Code <sup style="color: red;">*</sup></label><br>
+          <textarea name="Message" minlength="15" maxlength="10" placeholder="Scholarship Id" cols="40"></textarea>
+        </div>
+      </div>
+
+
+      <footer>
+        <p>By clicking continue, i agree to the <a href="#">Terms Of Use</a> and <br>acknowledge i have read the <a
+            href="#">Privacy Policy</a></p>
+
+        <button>Proceed</button>
+
+        <p style="text-align: center;">Already have an account? <a href="#">Sign In</a></p>
+      </footer>
+
+
+    </fieldset>
+
+  </form>
+
+
+</body>
+
+</html>
